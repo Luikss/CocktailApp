@@ -1,7 +1,6 @@
 ﻿using Microsoft.Maui.Handlers;
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
-using Views;
 using Windows.Graphics;
 using WinRT.Interop;
 
