@@ -2,11 +2,42 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.HomePage"
-             Title="HomePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="HomePage"
+             xmlns:local="clr-namespace:CocktailApp"
+             BackgroundColor="{DynamicResource Secondary}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="Gray" />
+            </Style>
+            <Style x:Key="labelResultStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="Margin" Value="10,0,0,0" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout
+            Margin="20,50"
+            HorizontalOptions="Start"
+            Orientation="Vertical"
+            Spacing="20"
+            VerticalOptions="Start">
+        <StackLayout Orientation="Horizontal">
+            <Label
+                    FontSize="16"
+                    Text="{Binding drinks[0].strDrink}"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+            <Label
+                    FontSize="16"
+                    Text="{Binding drinks[0].strDrinkThumb}"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+        </StackLayout>
+    </StackLayout>
+
+
+
 </ContentPage>
