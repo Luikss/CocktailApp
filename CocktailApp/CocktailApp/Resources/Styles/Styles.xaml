@@ -24,22 +24,22 @@
 
     <Style TargetType="Label" x:Key="HeaderStyle" BasedOn="{StaticResource BaseBoldLabeltyle}">
         <Setter Property="FontSize" Value="32" />
-        <Setter Property="TextColor" Value="{StaticResource DarkTextColor}" />
+        <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
     <Style TargetType="Label" x:Key="SubHeaderStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
         <Setter Property="FontSize" Value="20" />
-        <Setter Property="TextColor" Value="{StaticResource DarkTextColor}" />
+        <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
     <Style TargetType="Label" x:Key="AllCocktailHeaderStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
         <Setter Property="FontSize" Value="18" />
-        <Setter Property="TextColor" Value="{StaticResource DarkTextColor}" />
+        <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
     <Style TargetType="Label" x:Key="AllCocktailHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabeltyle}">
         <Setter Property="FontSize" Value="12" />
-        <Setter Property="TextColor" Value="{StaticResource DarkTextColor}" />
+        <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
 </ResourceDictionary>
