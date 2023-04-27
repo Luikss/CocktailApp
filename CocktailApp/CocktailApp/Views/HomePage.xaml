@@ -51,7 +51,8 @@
                     FontSize="20"
                     BackgroundColor="#28C2D1"
                     CornerRadius="10"
-                    Margin="7" />
+                    Margin="7"
+                    Clicked="Alco_Clicked"/>
 
             </Border>
 
@@ -77,7 +78,8 @@
                     FontSize="20"
                     BackgroundColor="#3E8EED"
                     CornerRadius="10"
-                    Margin="7" />
+                    Margin="7"
+                    Clicked="NonAlco_Clicked"/>
 
             </Border>
 
@@ -101,7 +103,8 @@
                     FontSize="20"
                     BackgroundColor="#eb5757"
                     CornerRadius="10"
-                    Margin="7" />
+                    Margin="7"
+                    Clicked="Jokes_Clicked"/>
 
             </Border>
 
