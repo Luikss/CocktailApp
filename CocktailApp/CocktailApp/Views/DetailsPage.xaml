@@ -1,12 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Views.DetailsPage"
-             Title="DetailsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="Views.DetailsPage">
+    
+    <Grid
+        Margin="24,52,24,0"
+        ColumnDefinitions="*,*"
+        RowDefinitions="Auto,*">
+
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgback.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            BackgroundColor="#FFD590"
+            Clicked="BackButton_Clicked" />
+
+
+        <!-- Main Content ScrollView -->
+        <ScrollView
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalScrollBarVisibility="Never"
+            VerticalScrollBarVisibility="Never"
+            Margin="0,16,0,0">
+
+            <VerticalStackLayout
+                Spacing="18">
+
+                <!-- Image -->
+                <Image
+                    Source="{Binding ImageUrl}"
+                    Aspect="AspectFit"
+                    HorizontalOptions="Fill"
+                    HeightRequest="240"
+                    Margin="24,0" />
+
+                <!-- Name -->
+                <Label
+                    Style="{StaticResource HeaderStyle}"
+                    Text="{Binding Name}"
+                    Margin="0,-24,0,0"/>
+
+                <!-- Planet Subtitle -->
+                <Label
+                    Margin="0,-12,0,0"
+                    Style="{StaticResource HeaderSubtitleStyle}"
+                    Text="{Binding SubHeaderStyle}" />
+
+                <!-- Divider -->
+                <Rectangle
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}" />
+
+                <!-- Cocktail Info -->
+                <Label
+                    Style="{StaticResource DetailsTextStyle}"
+                    LineBreakMode="WordWrap"
+                    Text="{Binding Instructions}" />
+
+
+               
+            </VerticalStackLayout>
+
+        </ScrollView>
+    </Grid>
 </ContentPage>

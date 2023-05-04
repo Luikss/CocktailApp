@@ -43,6 +43,7 @@
 
     <Color x:Key="PageBackgroundColor">#191932</Color>
     <Color x:Key="FrameBackgroundColor">#F1EFF0</Color>
+    <Color x:Key="ButtonBackgroundColor">#A7CBF6</Color>
     <Color x:Key="ButtonBackgroundColor1">#28C2D1</Color>
     <Color x:Key="ButtonBackgroundColor2">#3E8EED</Color>
     <Color x:Key="ButtonBackgroundColor3">#eb5757</Color>
