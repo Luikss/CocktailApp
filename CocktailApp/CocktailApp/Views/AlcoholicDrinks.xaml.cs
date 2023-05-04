@@ -1,11 +1,19 @@
+using Services;
+
 namespace Views;
 
 public partial class AlcoholicDrinks : ContentPage
 {
     public AlcoholicDrinks()
-	{
-		InitializeComponent();
-	}
+	  {
+		    InitializeComponent();
+	  }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        alcoCocktails.ItemsSource = CocktailService.GetAlcoholicCoctails();
+    }
 
     async void BackButton_Clicked(System.Object sender, System.EventArgs e)
     {
