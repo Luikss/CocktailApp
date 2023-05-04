@@ -1,5 +1,3 @@
-using Services;
-
 namespace Views;
 
 public partial class AlcoholicDrinks : ContentPage
