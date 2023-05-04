@@ -41,15 +41,8 @@
 
                 <CollectionView
                     x:Name="nonAlcoCocktails"
-                    HeightRequest="160"
                     SelectionMode="Single"
                     SelectionChanged="Details_Clicked">
-
-                    <CollectionView.ItemsLayout>
-                        <LinearItemsLayout
-                            Orientation="Horizontal"
-                            ItemSpacing="16" />
-                    </CollectionView.ItemsLayout>
 
                     <CollectionView.ItemTemplate>
                         <DataTemplate
@@ -57,7 +50,7 @@
                             
                             <Border
                                 VerticalOptions="Fill"
-                                WidthRequest="140"
+                                HeightRequest="250"
                                 StrokeThickness="0"
                                 Padding="16">
 
@@ -70,14 +63,14 @@
                                         Source="{Binding ImageUrl}"
                                         Aspect="AspectFit"                                        
                                         VerticalOptions="Fill"
-                                        HorizontalOptions="Fill"/>
+                                        HorizontalOptions="Start" />
 
                                     <Label
                                         Grid.Row="1"
                                         Style="{StaticResource AllCocktailsHeaderStyle}"
                                         Text="{Binding Name}"
                                         TextColor="#FFD590"
-                                        Margin="0,4,0,0"/>
+                                        Margin="0,4,0,0" />
 
                                 </Grid>
 
