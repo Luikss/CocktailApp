@@ -16,9 +16,8 @@ public partial class AlcoholFreeDrinks : ContentPage
     }
 
     async void BackButton_Clicked(System.Object sender, System.EventArgs e)
-    {
-        await Navigation.PopAsync();
-    }
+        => Application.Current.MainPage = new NavigationPage(new HomePage());
+
 
     // NEEDS Button in XAML
     async void Details_Clicked(System.Object sender, System.EventArgs e)
