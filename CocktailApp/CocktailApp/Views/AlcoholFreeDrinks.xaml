@@ -5,11 +5,11 @@
              x:Class="Views.AlcoholFreeDrinks">
 
     <Grid
-            x:Name="MainContentGrid"
-            Padding="24,52,24,0"
-            BackgroundColor="#191932"
-            ColumnDefinitions="*,Auto"
-            RowDefinitions="Auto,*">
+        x:Name="MainContentGrid"
+        Padding="24,52,24,0"
+        BackgroundColor="#191932"
+        ColumnDefinitions="*,Auto"
+        RowDefinitions="Auto,*">
 
         <ImageButton
             WidthRequest="24"
@@ -23,15 +23,14 @@
             Clicked="BackButton_Clicked" />
 
         <ScrollView
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                HorizontalScrollBarVisibility="Never"
-                VerticalScrollBarVisibility="Never"
-                Margin="0,32,-24,0">
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalScrollBarVisibility="Never"
+            VerticalScrollBarVisibility="Never"
+            Margin="0,32,-24,0">
 
-            <VerticalStackLayout
-                        Spacing="12">
+            <VerticalStackLayout Spacing="12">
 
                 <Label
                     Style="{StaticResource SubHeaderStyle}"
