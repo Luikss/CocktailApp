@@ -1,12 +1,10 @@
-using Services;
-
 namespace Views;
 
 public partial class AlcoholFreeDrinks : ContentPage
 {
     public AlcoholFreeDrinks()
     {
-      InitializeComponent();
+        InitializeComponent();
     }
 
     protected override void OnAppearing()
