@@ -99,7 +99,7 @@
                     <RoundRectangle CornerRadius="45"/>
                 </Border.StrokeShape>
 
-                <Button Text="Jokes not for everyone!"
+                <Button Text="BAR JOKES"
                     FontSize="20"
                     BackgroundColor="#eb5757"
                     CornerRadius="10"
