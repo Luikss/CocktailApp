@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Views.AlcoholFreeDrinks">
-
+             xmlns:models="clr-namespace:Models"
+             x:Class="Views.AlcoholFreeDrinks"
+             Title="NonAlcoholicDrinks">
 
     <Grid
             x:Name="MainContentGrid"
@@ -41,16 +42,14 @@
                     </CollectionView.ItemsLayout>
 
                     <CollectionView.ItemTemplate>
-                        <DataTemplate>
+                        <DataTemplate
+                            x:DataType="models:Cocktail">
+                            
                             <Border
                                 VerticalOptions="Fill"
                                 WidthRequest="140"
                                 StrokeThickness="0"
                                 Padding="16">
-
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="16"/>
-                                </Border.StrokeShape>
 
                                 <Grid
                                     RowDefinitions="*,Auto,Auto"
@@ -58,8 +57,7 @@
 
                                     <Image
                                         Grid.Row="0"
-                                        Source="{Binding HeroImage}"
-                                        Rotation="-30"
+                                        Source="{Binding ImageUrl}"
                                         Aspect="AspectFit"                                        
                                         VerticalOptions="Fill"
                                         HorizontalOptions="Fill"/>
@@ -68,6 +66,7 @@
                                         Grid.Row="1"
                                         Style="{StaticResource AllCocktailsHeaderStyle}"
                                         Text="{Binding Name}"
+                                        TextColor="#FFD590"
                                         Margin="0,4,0,0"/>
 
                                 </Grid>

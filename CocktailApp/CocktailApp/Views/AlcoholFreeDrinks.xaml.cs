@@ -1,3 +1,5 @@
+using Services;
+
 namespace Views;
 
 public partial class AlcoholFreeDrinks : ContentPage
@@ -6,6 +8,12 @@ public partial class AlcoholFreeDrinks : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        nonAlcoCocktails.ItemsSource = CocktailService.GetNonAlcoholicCoctails();
+    }
 
     // NEEDS Button in XAML
     async void Details_Clicked(System.Object sender, System.EventArgs e)
