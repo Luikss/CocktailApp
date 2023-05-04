@@ -3,10 +3,95 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.Jokes"
              Title="Jokes">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid
+            x:Name="MainContentGrid"
+            Padding="24,52,24,0"
+            BackgroundColor="#191932"
+            ColumnDefinitions="*,Auto"
+            RowDefinitions="Auto,*">
+
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgback.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            BackgroundColor="#FFD590"
+            Clicked="BackButton_Clicked" />
+
+        <ScrollView
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                HorizontalScrollBarVisibility="Never"
+                VerticalScrollBarVisibility="Never"
+                Margin="0,32,-24,0">
+
+            <VerticalStackLayout
+                        Spacing="12">
+
+                <Label
+                    Style="{StaticResource SubHeaderStyle}"
+                    Text="JOKES"
+                    Margin="0,12,0,0"
+                    TextColor="#FFD590">
+                </Label>
+
+                <CollectionView
+                    x:Name="jokes"
+                    HeightRequest="160"
+                    SelectionMode="Single">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout
+                            Orientation="Horizontal"
+                            ItemSpacing="16" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                VerticalOptions="Fill"
+                                WidthRequest="140"
+                                StrokeThickness="0"
+                                Padding="16">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="16"/>
+                                </Border.StrokeShape>
+
+                                <Grid
+                                    RowDefinitions="*,Auto,Auto"
+                                    RowSpacing="4">
+
+                                    <Image
+                                        Grid.Row="0"
+                                        Source="{Binding HeroImage}"
+                                        Rotation="-30"
+                                        Aspect="AspectFit"                                        
+                                        VerticalOptions="Fill"
+                                        HorizontalOptions="Fill"/>
+
+                                    <Label
+                                        Grid.Row="1"
+                                        Style="{StaticResource AllCocktailHeaderStyle}"
+                                        Text="{Binding Name}"
+                                        Margin="0,4,0,0"/>
+
+                                </Grid>
+
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+    </Grid>
+
 </ContentPage>

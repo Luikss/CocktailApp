@@ -2,17 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:Models"
-             x:Class="Views.AlcoholicDrinks"
-             Title="AlcoholicDrinks">
-
+             x:Class="Views.AlcoholicDrinks">
+             
     <Grid
-        x:Name="MainContentGrid"
-        Padding="24,52,24,0"
-        BackgroundColor="#191932"
-        ColumnDefinitions="*,Auto"
-        RowDefinitions="Auto,*">
-    
-    
+            x:Name="MainContentGrid"
+            Padding="24,52,24,0"
+            BackgroundColor="#191932"
+            ColumnDefinitions="*,Auto"
+            RowDefinitions="Auto,*">
+
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgback.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            BackgroundColor="#FFD590"
+            Clicked="BackButton_Clicked" />
+
         <ScrollView
             Grid.Row="1"
             Grid.Column="0"

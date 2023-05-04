@@ -47,7 +47,7 @@
                     <RoundRectangle CornerRadius="45"/>
                 </Border.StrokeShape>
 
-                <Button Text="ALCOHOLIC DRINKS!"
+                <Button Text="ALCOHOLIC DRINKS"
                     FontSize="20"
                     BackgroundColor="#28C2D1"
                     CornerRadius="10"
