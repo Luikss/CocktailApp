@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Services
+﻿namespace Services
 {
     public class CocktailService
     {
-        private static List<Cocktail> alcoholicCocktails = new()
+        private readonly List<Cocktail> alcoholicCocktails = new()
         {
             new()
             {
@@ -52,7 +48,7 @@ namespace Services
             }
         };
 
-        private static List<Cocktail> nonAlcoholicCocktails = new()
+        private readonly List<Cocktail> nonAlcoholicCocktails = new()
         {
             new()
             {
@@ -96,12 +92,12 @@ namespace Services
             }
         };
 
-        public static List<Cocktail> GetAlcoholicCoctails()
+        public List<Cocktail> GetAlcoholicCoctails()
         {
             return alcoholicCocktails;
         }
 
-        public static List<Cocktail> GetNonAlcoholicCoctails()
+        public List<Cocktail> GetNonAlcoholicCoctails()
         {
             return nonAlcoholicCocktails;
         }
