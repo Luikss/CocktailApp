@@ -44,7 +44,8 @@
                 <CollectionView
                     x:Name="alcoCocktails"
                     HeightRequest="160"
-                    SelectionMode="Single">
+                    SelectionMode="Single"
+                    SelectionChanged="Details_Clicked">
 
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout

@@ -2,13 +2,13 @@ namespace Views;
 
 public partial class DetailsPage : ContentPage
 {
-	public DetailsPage()
+	public DetailsPage(Cocktail cocktail)
 	{
-		InitializeComponent();
-
+        InitializeComponent();
+        BindingContext = cocktail;
     }
 
-    async void BackButton_Clicked(System.Object sender, System.EventArgs e)
+    async void BackButton_Clicked(object sender, EventArgs e)
     {
         await Navigation.PopAsync();
     }
