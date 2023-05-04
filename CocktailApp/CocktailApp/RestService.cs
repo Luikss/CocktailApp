@@ -1,8 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using Nancy.Json;
+using Newtonsoft.Json;
 using System.Diagnostics;
-using System.Text;
 
 namespace CocktailApp
 {
@@ -26,6 +24,7 @@ namespace CocktailApp
                 {
                     var content = await response.Content.ReadAsStringAsync();
                     cocktailData = JsonConvert.DeserializeObject<CocktailData>(content);
+                    return cocktailData;
                 }
             }
             catch (Exception ex)

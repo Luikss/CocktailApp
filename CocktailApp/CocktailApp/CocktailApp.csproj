@@ -51,6 +51,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.3" />
+	  <PackageReference Include="Nancy" Version="2.0.0" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 

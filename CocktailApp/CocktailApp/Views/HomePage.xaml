@@ -18,24 +18,8 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <StackLayout
-            Margin="20,50"
-            HorizontalOptions="Start"
-            Orientation="Vertical"
-            Spacing="20"
-            VerticalOptions="Start">
-        <StackLayout Orientation="Horizontal">
-            <Label
-                    FontSize="16"
-                    Text="{Binding drinks[0].strDrink}"
-                    TextColor="White"
-                    VerticalOptions="Center" />
-            <Label
-                    FontSize="16"
-                    Text="{Binding drinks[0].strDrinkThumb}"
-                    TextColor="White"
-                    VerticalOptions="Center" />
-        </StackLayout>
+    <StackLayout>
+        <Label Text="{Binding Drinks[0].strDrink}" />
     </StackLayout>
 
 
