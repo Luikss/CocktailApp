@@ -45,6 +45,33 @@
                     "Corona: 1 bottle",
                     "Light rum: 1 shot"
                 }
+            },
+            new()
+            {
+                Name = " Amaretto Sunrise",
+                GlassType = "Collins Glass",
+                Instructions = "Mix together the amaretto and orange juice. Pour into glass and then add the grenadine untill you see the sunrise.",
+                ImageUrl = "https://www.thecocktaildb.com/images/media/drink/akcpsh1493070267.jpg",
+                Ingredients = new List<string>
+                {
+                    "Amaretto: 10ml",
+                    "Orange juice: 120ml",
+                    "Grenadine: 3ml"
+                }
+            },
+            new()
+            {
+                Name = " Martinez",
+                GlassType = "Cocktail Glass",
+                Instructions = "Add all ingredients to a mixing glass and fill with ice.\r\n\r\nStir until chilled, and strain into a chilled coupe glass.",
+                ImageUrl = "https://www.thecocktaildb.com/images/media/drink/fs6kiq1513708455.jpg",
+                Ingredients = new List<string>
+                {
+                    "Gin: 45ml",
+                    "Sweet Vermouth: 45ml",
+                    "Maraschino Liqueur: 1 teaspoon",
+                    "Angostura Bitters: 2 dashes"
+                }
             }
         };
 
@@ -78,16 +105,44 @@
             },
             new()
             {
-                Name = " Alice Cocktail",
-                GlassType = "Cocktail glass",
-                Instructions = "Shake well, strain into a large cocktail glass.",
-                ImageUrl = "https://www.thecocktaildb.com/images/media/drink/qyqtpv1468876144.jpg",
+                Name = " Banana Strawberry Shake",
+                GlassType = "Highball Glass",
+                Instructions = "Blend all together in a blender until smooth.",
+                ImageUrl = "https://www.thecocktaildb.com/images/media/drink/vqquwx1472720634.jpg",
                 Ingredients = new List<string>
                 {
-                    "Grenadine: 10ml",
-                    "Orange juice: 10ml",
-                    "Pineapple juice: 20ml",
-                    "Cream: 40ml"
+                    "Strawberries: 1/2 lb frozen",
+                    "Banana: 1 frozen",
+                    "Yoghurt: 1 cup plain",
+                    "Milk: 1 cup",
+                    "Honey: to taste"
+                }
+            },
+            new()
+            {
+                Name = " Limeade",
+                GlassType = "Highball Glass",
+                Instructions = "In a large glass, put the lime juice and sugar, and stir well. Add cold seltzer water to fill. Put the lime peels in the glass. Drink. Repeat until limes or soda run out.",
+                ImageUrl = "https://www.thecocktaildb.com/images/media/drink/5jdp5r1487603680.jpg",
+                Ingredients = new List<string>
+                {
+                    "Lime: Juice of 1",
+                    "Sugar: 1 tablespoon",
+                    "Soda water: seltzer water",
+                    "Lime peel: 1"
+                }
+            },
+            new()
+            {
+                Name = " Kill the cold Smoothie",
+                GlassType = "Highball Glass",
+                Instructions = "Juice ginger and lemon and add it to hot water. You may add cardomom.",
+                ImageUrl = "https://www.thecocktaildb.com/images/media/drink/7j1z2e1487603414.jpg",
+                Ingredients = new List<string>
+                {
+                    "Ginger: 1 inch",
+                    "Lemon: 1/4",
+                    "Water: 1 cup hot"
                 }
             }
         };

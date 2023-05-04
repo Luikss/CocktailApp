@@ -50,13 +50,13 @@
                             
                             <Border
                                 VerticalOptions="Fill"
-                                HeightRequest="250"
+                                HeightRequest="450"
                                 StrokeThickness="0"
                                 Padding="16">
 
                                 <Grid
                                     RowDefinitions="*,Auto,Auto"
-                                    RowSpacing="4">
+                                    RowSpacing="2">
 
                                     <Image
                                         Grid.Row="0"
@@ -70,7 +70,8 @@
                                         Style="{StaticResource AllCocktailsHeaderStyle}"
                                         Text="{Binding Name}"
                                         TextColor="#FFD590"
-                                        Margin="0,4,0,0" />
+                                        Margin="0,4,0,0" 
+                                        HorizontalOptions="Center" />
 
                                 </Grid>
 
