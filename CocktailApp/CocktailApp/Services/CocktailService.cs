@@ -63,7 +63,7 @@
             {
                 Name = " Martinez",
                 GlassType = "Cocktail Glass",
-                Instructions = "Add all ingredients to a mixing glass and fill with ice.\r\n\r\nStir until chilled, and strain into a chilled coupe glass.",
+                Instructions = "Add all ingredients to a mixing glass and fill with ice.\r\nStir until chilled, and strain into a chilled coupe glass.",
                 ImageUrl = "https://www.thecocktaildb.com/images/media/drink/fs6kiq1513708455.jpg",
                 Ingredients = new List<string>
                 {
