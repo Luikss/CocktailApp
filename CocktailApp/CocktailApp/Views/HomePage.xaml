@@ -7,7 +7,7 @@
         <Grid
             x:Name="MainContentGrid"
             Padding="24,52,24,0"
-            BackgroundColor="#191932"
+            BackgroundColor="{StaticResource PageBackgroundColor}"
             ColumnDefinitions="*,Auto"
             RowDefinitions="Auto,*">
 
@@ -22,20 +22,20 @@
                     Style="{StaticResource HeaderStyle}"
                     Text="LET'S HAVE SOME FUN!"
                     Margin="0,36,0,0"
-                    TextColor="{StaticResource Yellow200Accent}"/>
+                    TextColor="{StaticResource DefaultTextColor}"/>
 
                 <Label
                     Style="{StaticResource SubHeaderStyle}"
                     Text="Choose your character!"
                     Margin="0,12,0,0"
-                    TextColor="{StaticResource Yellow200Accent}"/>
+                    TextColor="{StaticResource DefaultTextColor}"/>
 
             </VerticalStackLayout>
 
 
             <Border
                 Padding="2,0"
-                BackgroundColor="Black"
+                BackgroundColor="{StaticResource Black}"
                 Stroke="{StaticResource BorderColor}"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center"
@@ -51,18 +51,16 @@
 
                 <Button Text="ALCOHOLIC DRINKS"
                     FontSize="20"
-                    BackgroundColor="#28C2D1"
+                    BackgroundColor="{StaticResource ButtonBackgroundColor1}"
                     CornerRadius="10"
                     Margin="7"
                     Clicked="Alco_Clicked"/>
 
             </Border>
 
-
-
             <Border
                 Padding="2,0"
-                BackgroundColor="Black"
+                BackgroundColor="{StaticResource Black}"
                 Stroke="{StaticResource BorderColor}"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center"
@@ -78,7 +76,7 @@
 
                 <Button Text="NON-ALCOHOLIC DRINKS"
                     FontSize="20"
-                    BackgroundColor="#3E8EED"
+                    BackgroundColor="{StaticResource ButtonBackgroundColor2}"
                     CornerRadius="10"
                     Margin="7"
                     Clicked="NonAlco_Clicked"/>
@@ -87,7 +85,7 @@
 
             <Border
                 Padding="2,0"
-                BackgroundColor="Black"
+                BackgroundColor="{StaticResource Black}"
                 Stroke="{StaticResource BorderColor}"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center"
@@ -103,7 +101,7 @@
 
                 <Button Text="BAR JOKES"
                     FontSize="20"
-                    BackgroundColor="#eb5757"
+                    BackgroundColor="{StaticResource ButtonBackgroundColor3}"
                     CornerRadius="10"
                     Margin="7"
                     Clicked="Jokes_Clicked"/>

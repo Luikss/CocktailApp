@@ -8,7 +8,7 @@
     <Grid
             x:Name="MainContentGrid"
             Padding="24,52,24,0"
-            BackgroundColor="#191932"
+            BackgroundColor="{StaticResource PageBackgroundColor}"
             ColumnDefinitions="*,Auto"
             RowDefinitions="Auto,*">
 
@@ -20,7 +20,7 @@
             Grid.Column="0"
             HorizontalOptions="Start"
             VerticalOptions="Center"
-            BackgroundColor="{StaticResource Yellow200Accent}"
+            BackgroundColor="{StaticResource DefaultTextColor}"
             Clicked="BackButton_Clicked" />
 
         <ScrollView

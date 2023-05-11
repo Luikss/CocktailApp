@@ -7,7 +7,7 @@
     <Grid
         x:Name="MainContentGrid"
         Padding="24,52,24,0"
-        BackgroundColor="#191932"
+        BackgroundColor="{StaticResource PageBackgroundColor}"
         ColumnDefinitions="*,Auto"
         RowDefinitions="Auto,*">
 
@@ -19,7 +19,7 @@
             Grid.Column="0"
             HorizontalOptions="Start"
             VerticalOptions="Center"
-            BackgroundColor="{StaticResource Yellow200Accent}"
+            BackgroundColor="{StaticResource DefaultTextColor}"
             Clicked="BackButton_Clicked" />
 
         <ScrollView
@@ -36,7 +36,7 @@
                     Style="{StaticResource HeaderStyle}"
                     Text="ALCOHOLIC DRINKS"
                     Margin="0,12,0,0"
-                    TextColor="{StaticResource Yellow200Accent}">
+                    TextColor="{StaticResource DefaultTextColor}">
                     
                 </Label>
 
@@ -70,9 +70,9 @@
                                         Grid.Row="1"
                                         Style="{StaticResource AllCocktailHeaderStyle}"
                                         Text="{Binding Name}"
-                                        TextColor="{StaticResource Yellow200Accent}"
+                                        TextColor="{StaticResource DefaultTextColor}"
                                         Margin="0,14,0,0"
-                                        HorizontalOptions="Center" />
+                                        HorizontalOptions="Start" />
 
                                 </Grid>
 
