@@ -132,6 +132,7 @@
     <Style TargetType="Label" x:Key="DetailsTextStyle" BasedOn="{StaticResource BaseRegularLabeltyle}">
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontFamily" Value="NunitoRegular" />
+        <Setter Property="Padding" Value="5,5,5,5" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
