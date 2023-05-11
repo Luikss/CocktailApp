@@ -37,7 +37,7 @@
                     Style="{StaticResource HeaderStyle}"
                     Text="ALCOHOLIC DRINKS"
                     Margin="0,12,0,0"
-                    TextColor="{StaticResource DefaultTextColor}">
+                    TextColor="{StaticResource DefaultTextColor}" >
                 </Label>
 
                 <CollectionView

@@ -84,38 +84,54 @@
     <Style TargetType="Label" x:Key="BaseBoldLabeltyle">
         <Setter Property="LineBreakMode" Value="TailTruncation" />
         <Setter Property="FontAutoScalingEnabled" Value="False" />
-        <Setter Property="FontFamily" Value="BoldFont" />
+        <Setter Property="FontFamily" Value="NunitoBold" />
     </Style>
 
     <Style TargetType="Label" x:Key="BaseMediumLabelStyle">
         <Setter Property="LineBreakMode" Value="TailTruncation" />
         <Setter Property="FontAutoScalingEnabled" Value="False" />
-        <Setter Property="FontFamily" Value="MediumFont" />
+        <Setter Property="FontFamily" Value="NunitoMedium" />
     </Style>
 
     <Style TargetType="Label" x:Key="BaseRegularLabeltyle">
         <Setter Property="LineBreakMode" Value="TailTruncation" />
         <Setter Property="FontAutoScalingEnabled" Value="False" />
-        <Setter Property="FontFamily" Value="RegularFont" />
+        <Setter Property="FontFamily" Value="NunitoRegular" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="HomeHeaderStyle" BasedOn="{StaticResource BaseBoldLabeltyle}">
+        <Setter Property="FontSize" Value="36" />
+        <Setter Property="FontFamily" Value="NunitoBold" />
+        <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
     <Style TargetType="Label" x:Key="HeaderStyle" BasedOn="{StaticResource BaseBoldLabeltyle}">
         <Setter Property="FontSize" Value="32" />
+        <Setter Property="FontFamily" Value="NunitoSemiBold" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
     <Style TargetType="Label" x:Key="SubHeaderStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
         <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontFamily" Value="NunitoMedium" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
     <Style TargetType="Label" x:Key="AllCocktailHeaderStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
         <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontFamily" Value="NunitoRegular" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
     <Style TargetType="Label" x:Key="AllCocktailHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabeltyle}">
         <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontFamily" Value="NunitoLight" />
+        <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="DetailsTextStyle" BasedOn="{StaticResource BaseRegularLabeltyle}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontFamily" Value="NunitoRegular" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
