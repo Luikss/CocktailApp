@@ -45,6 +45,7 @@
                             <Border
                                 VerticalOptions="Fill"
                                 WidthRequest="400"
+                                HeightRequest="400"
                                 StrokeThickness="0"
                                 Padding="16">
 
