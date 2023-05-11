@@ -13,7 +13,7 @@
             RowDefinitions="Auto,*">
 
         <ImageButton
-            WidthRequest="24"
+            WidthRequest="36"
             HeightRequest="24"
             Margin="0,12,0,0"
             Source="imgback.png"
