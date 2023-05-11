@@ -14,6 +14,7 @@
         <ImageButton
             WidthRequest="24"
             HeightRequest="24"
+            Margin="0,12,0,0"
             Source="imgback.png"
             Grid.Row="0"
             Grid.Column="0"
