@@ -38,7 +38,6 @@
                     Text="ALCOHOLIC DRINKS"
                     Margin="0,12,0,0"
                     TextColor="{StaticResource DefaultTextColor}">
-                    
                 </Label>
 
                 <CollectionView
