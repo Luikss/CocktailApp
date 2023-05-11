@@ -46,7 +46,7 @@
                     Style="{StaticResource HeaderStyle}"
                     Text="{Binding Name}"
                     TextColor="#FFD590"
-                    Margin="0,-24,0,0"/>
+                    Margin="0,-12,0,0"/>
 
                 <!-- Divider -->
                 <Rectangle
