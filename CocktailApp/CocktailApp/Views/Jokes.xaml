@@ -20,7 +20,7 @@
             Grid.Column="0"
             HorizontalOptions="Start"
             VerticalOptions="Center"
-            BackgroundColor="#FFD590"
+            BackgroundColor="{StaticResource Yellow200Accent}"
             Clicked="BackButton_Clicked" />
 
         <ScrollView

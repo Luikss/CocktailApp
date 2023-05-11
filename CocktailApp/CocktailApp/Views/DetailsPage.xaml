@@ -18,7 +18,7 @@
             Grid.Column="0"
             HorizontalOptions="Start"
             VerticalOptions="Center"
-            BackgroundColor="#FFD590"
+            BackgroundColor="{StaticResource Yellow200Accent}"
             Clicked="BackButton_Clicked" />
 
         <!-- Main Content ScrollView -->
@@ -45,8 +45,7 @@
                 <Label
                     Style="{StaticResource HeaderStyle}"
                     Text="{Binding Name}"
-                    TextColor="#FFD590"
-                    Margin="0,-12,0,0"/>
+                    TextColor="{StaticResource Yellow200Accent}" />
 
                 <!-- Divider -->
                 <Rectangle
@@ -67,7 +66,7 @@
                                 Style="{StaticResource DetailsTextStyle}"
                                 LineBreakMode="WordWrap"
                                 Text="{Binding .}"
-                                TextColor="#FFD590" />
+                                TextColor="{StaticResource Yellow200Accent}" />
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
 
@@ -85,7 +84,7 @@
                     Style="{StaticResource DetailsTextStyle}"
                     LineBreakMode="WordWrap"
                     Text="{Binding Instructions}"
-                    TextColor="#FFD590" />
+                    TextColor="{StaticResource Yellow200Accent}" />
 
             </VerticalStackLayout>
 
